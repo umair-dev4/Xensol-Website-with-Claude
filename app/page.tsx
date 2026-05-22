@@ -130,10 +130,10 @@ export default function HomePage() {
     <>
       {/* ── HERO ─────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden dot-grid">
-        <div className="absolute -top-32 -left-32 w-[700px] h-[700px] rounded-full bg-accent/[0.14] blur-[140px] pointer-events-none" />
-        <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-mint/[0.1] blur-[120px] pointer-events-none" />
+        <div className="absolute -top-32 -left-32 w-[700px] h-[700px] rounded-full bg-accent/[0.11] blur-[140px] pointer-events-none" />
+        <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-mint/[0.08] blur-[120px] pointer-events-none" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-28 pb-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-28 pb-20">
           <div className="animate-fade-up inline-flex items-center gap-2 section-chip mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-mint animate-pulse-dot" />
             Now accepting clients &middot; 2 spots remaining
@@ -181,8 +181,8 @@ export default function HomePage() {
       </section>
 
       {/* ── VALUE PROPS ──────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Why Xensol</span>
             <h2
@@ -213,8 +213,8 @@ export default function HomePage() {
       </section>
 
       {/* ── HOW IT WORKS ─────────────────────────── */}
-      <section className="py-32 px-6 bg-surface/40">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-32 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-20">
             <span className="section-chip">Process</span>
             <h2
@@ -225,7 +225,7 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-10 relative">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 relative">
             <div className="hidden md:block absolute top-10 left-[calc(33%+16px)] right-[calc(33%+16px)] h-px bg-gradient-to-r from-accent/30 via-mint/30 to-accent/30" />
             {steps.map((s, i) => (
               <AnimatedSection key={s.num} delay={i * 0.14} className="relative">
@@ -243,8 +243,8 @@ export default function HomePage() {
       </section>
 
       {/* ── PRICING ──────────────────────────────── */}
-      <section className="py-32 px-6" id="pricing">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-32" id="pricing">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Pricing</span>
             <h2
@@ -258,7 +258,7 @@ export default function HomePage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
             {/* Starter */}
             <AnimatedSection delay={0.05}>
               <div className="feature-card h-full flex flex-col">
@@ -323,8 +323,8 @@ export default function HomePage() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────── */}
-      <section className="py-32 px-6 bg-surface/40">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-32 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Social Proof</span>
             <h2
@@ -366,8 +366,8 @@ export default function HomePage() {
       </section>
 
       {/* ── FAQ ──────────────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-3xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-14">
             <span className="section-chip">FAQ</span>
             <h2
@@ -378,18 +378,20 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
-            <FAQAccordion items={faqs} />
+            <div className="max-w-3xl mx-auto">
+              <FAQAccordion items={faqs} />
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
       {/* ── FINAL CTA ────────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
             <div className="relative overflow-hidden rounded-3xl bg-surface border border-accent/20 p-12 md:p-20 text-center card-glow-accent">
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-[500px] h-[500px] rounded-full bg-accent/10 blur-[100px]" />
+                <div className="w-[500px] h-[500px] rounded-full bg-accent/8 blur-[100px]" />
               </div>
               <div className="relative z-10">
                 <span className="section-chip mb-6 inline-flex">Ready to scale?</span>

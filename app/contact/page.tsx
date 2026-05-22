@@ -60,9 +60,9 @@ export default function ContactPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative pt-40 pb-20 px-6 overflow-hidden dot-grid">
-        <div className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full bg-mint/[0.08] blur-[120px] pointer-events-none" />
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-40 pb-20 overflow-hidden dot-grid">
+        <div className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full bg-mint/[0.07] blur-[120px] pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6">
           <div className="animate-fade-up">
             <span className="section-chip mb-6 inline-flex">Get in Touch</span>
           </div>
@@ -84,8 +84,8 @@ export default function ContactPage() {
       </section>
 
       {/* ── FORM + CONTACT INFO ───────────────────── */}
-      <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-5 gap-12">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-5 gap-12">
           {/* Form */}
           <div className="lg:col-span-3">
             <AnimatedSection>
@@ -141,8 +141,8 @@ export default function ContactPage() {
       </section>
 
       {/* ── QUICK FAQ ────────────────────────────── */}
-      <section className="py-32 px-6 bg-surface/40">
-        <div className="max-w-3xl mx-auto">
+      <section className="py-32 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-14">
             <span className="section-chip">Before You Write</span>
             <h2
@@ -153,14 +153,16 @@ export default function ContactPage() {
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
-            <FAQAccordion items={quickFaqs} />
+            <div className="max-w-3xl mx-auto">
+              <FAQAccordion items={quickFaqs} />
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
       {/* ── AVAILABILITY BANNER ───────────────────── */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-surface border border-accent/20 rounded-2xl p-8 card-glow-accent">
               <div className="flex items-center gap-4">

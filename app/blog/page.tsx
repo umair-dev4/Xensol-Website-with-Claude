@@ -93,9 +93,9 @@ export default function BlogPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative pt-40 pb-24 px-6 overflow-hidden dot-grid">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-accent/[0.08] blur-[120px] pointer-events-none" />
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-40 pb-24 overflow-hidden dot-grid">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-accent/[0.07] blur-[120px] pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="animate-fade-up">
             <span className="section-chip mb-6 inline-flex">Xensol Journal</span>
           </div>
@@ -117,8 +117,8 @@ export default function BlogPage() {
       </section>
 
       {/* ── CATEGORY PILLS ───────────────────────── */}
-      <section className="px-6 pb-8">
-        <div className="max-w-7xl mx-auto flex flex-wrap gap-3 justify-center">
+      <section className="pb-8">
+        <div className="max-w-7xl mx-auto px-6 flex flex-wrap gap-3 justify-center">
           {categories.map((cat, i) => (
             <button
               key={cat}
@@ -136,8 +136,8 @@ export default function BlogPage() {
 
       {/* ── FEATURED POST ────────────────────────── */}
       {featured && (
-        <section className="py-8 px-6">
-          <div className="max-w-7xl mx-auto">
+        <section className="py-8">
+          <div className="max-w-7xl mx-auto px-6">
             <AnimatedSection>
               <article className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${featured.accent} border border-white/[0.08] p-10 md:p-14 group cursor-pointer`}>
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
@@ -168,13 +168,12 @@ export default function BlogPage() {
       )}
 
       {/* ── BLOG GRID ────────────────────────────── */}
-      <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post, i) => (
               <AnimatedSection key={post.slug} delay={i * 0.07}>
                 <article className="feature-card h-full flex flex-col group cursor-pointer">
-                  {/* Colour bar */}
                   <div className={`h-1.5 rounded-full bg-gradient-to-r ${post.accent} mb-6`} />
                   <div className="flex items-center gap-3 mb-4">
                     <span className="section-chip text-[0.68rem]">{post.category}</span>
@@ -204,12 +203,12 @@ export default function BlogPage() {
       </section>
 
       {/* ── NEWSLETTER ───────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-2xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
-            <div className="relative overflow-hidden rounded-3xl bg-surface border border-white/[0.08] p-10 md:p-14 text-center">
+            <div className="relative overflow-hidden rounded-3xl bg-surface border border-white/[0.08] p-10 md:p-14 text-center max-w-2xl mx-auto">
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-[300px] h-[300px] rounded-full bg-accent/8 blur-[80px]" />
+                <div className="w-[300px] h-[300px] rounded-full bg-accent/6 blur-[80px]" />
               </div>
               <div className="relative z-10">
                 <span className="section-chip mb-5 inline-flex">Newsletter</span>

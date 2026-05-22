@@ -95,9 +95,9 @@ export default function ServicesPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative pt-40 pb-24 px-6 overflow-hidden dot-grid">
-        <div className="absolute -top-20 -right-20 w-[600px] h-[600px] rounded-full bg-mint/[0.08] blur-[130px] pointer-events-none" />
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-40 pb-24 overflow-hidden dot-grid">
+        <div className="absolute -top-20 -right-20 w-[600px] h-[600px] rounded-full bg-mint/[0.07] blur-[130px] pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6">
           <div className="animate-fade-up">
             <span className="section-chip mb-6 inline-flex">What We Build</span>
           </div>
@@ -120,8 +120,8 @@ export default function ServicesPage() {
       </section>
 
       {/* ── SERVICES GRID ────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Services</span>
             <h2
@@ -154,8 +154,8 @@ export default function ServicesPage() {
       </section>
 
       {/* ── PROCESS ──────────────────────────────── */}
-      <section className="py-32 px-6 bg-surface/40">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-32 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Our Process</span>
             <h2
@@ -166,7 +166,7 @@ export default function ServicesPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4">
             {process.map((step, i) => (
               <AnimatedSection key={step.num} delay={i * 0.08}>
                 <div className="feature-card flex items-start gap-6">
@@ -185,8 +185,8 @@ export default function ServicesPage() {
       </section>
 
       {/* ── TECH STACK ───────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Tech Stack</span>
             <h2
@@ -214,12 +214,12 @@ export default function ServicesPage() {
       </section>
 
       {/* ── PRICING CTA ──────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
             <div className="relative overflow-hidden rounded-3xl bg-surface border border-accent/20 p-12 md:p-20 text-center card-glow-accent">
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-[400px] h-[400px] rounded-full bg-accent/10 blur-[90px]" />
+                <div className="w-[400px] h-[400px] rounded-full bg-accent/8 blur-[90px]" />
               </div>
               <div className="relative z-10">
                 <h2

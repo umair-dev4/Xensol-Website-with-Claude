@@ -74,9 +74,9 @@ export default function AboutPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────── */}
-      <section className="relative pt-40 pb-24 px-6 overflow-hidden dot-grid">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-accent/[0.1] blur-[130px] pointer-events-none" />
-        <div className="max-w-4xl mx-auto">
+      <section className="relative pt-40 pb-24 overflow-hidden dot-grid">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-accent/[0.08] blur-[130px] pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6">
           <div className="animate-fade-up">
             <span className="section-chip mb-6 inline-flex">Our Story</span>
           </div>
@@ -100,10 +100,10 @@ export default function AboutPage() {
       </section>
 
       {/* ── MISSION QUOTE ────────────────────────── */}
-      <section className="py-24 px-6 bg-surface/40">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-24 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
-            <blockquote className="relative pl-8 border-l-2 border-accent">
+            <blockquote className="relative pl-8 border-l-2 border-accent max-w-4xl">
               <p
                 className="font-display font-bold text-primary leading-tight"
                 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}
@@ -127,8 +127,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── STATS ────────────────────────────────── */}
-      <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s, i) => (
               <AnimatedSection key={s.label} delay={i * 0.08}>
@@ -145,8 +145,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── VALUES ───────────────────────────────── */}
-      <section className="py-32 px-6 bg-surface/40">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-32 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">Core Values</span>
             <h2
@@ -172,8 +172,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── TEAM ─────────────────────────────────── */}
-      <section className="py-32 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <span className="section-chip">The Team</span>
             <h2
@@ -202,27 +202,29 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────── */}
-      <section className="py-32 px-6 bg-surface/40">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-32 bg-surface/40">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
-            <span className="section-chip mb-6 inline-flex">Work With Us</span>
-            <h2
-              className="font-display font-bold mt-4 mb-5"
-              style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}
-            >
-              Ready to meet your new web team?
-            </h2>
-            <p className="text-muted text-lg mb-10">
-              We&apos;re currently accepting a limited number of new clients.
-              Let&apos;s talk about what we can build together.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/contact" className="btn-primary">
-                Get in Touch <span aria-hidden="true">→</span>
-              </Link>
-              <Link href="/services" className="btn-ghost">
-                See Our Services
-              </Link>
+            <div className="max-w-3xl mx-auto text-center">
+              <span className="section-chip mb-6 inline-flex">Work With Us</span>
+              <h2
+                className="font-display font-bold mt-4 mb-5"
+                style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}
+              >
+                Ready to meet your new web team?
+              </h2>
+              <p className="text-muted text-lg mb-10">
+                We&apos;re currently accepting a limited number of new clients.
+                Let&apos;s talk about what we can build together.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/contact" className="btn-primary">
+                  Get in Touch <span aria-hidden="true">→</span>
+                </Link>
+                <Link href="/services" className="btn-ghost">
+                  See Our Services
+                </Link>
+              </div>
             </div>
           </AnimatedSection>
         </div>
