@@ -173,7 +173,7 @@ export default function HomePage() {
       </section>
 
       {/* ── TRUSTED BY ───────────────────────────── */}
-      <section className="py-14 border-y border-white/[0.05]">
+      <section className="py-14 border-y border-black/[0.07]">
         <p className="text-center text-muted text-xs font-mono tracking-widest uppercase mb-8">
           Trusted by 200+ growing businesses worldwide
         </p>

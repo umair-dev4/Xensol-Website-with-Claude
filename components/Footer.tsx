@@ -21,7 +21,7 @@ const cols = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-surface">
+    <footer className="border-t border-black/[0.08] bg-surface">
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-14">
           {/* Brand column */}
@@ -44,7 +44,7 @@ export default function Footer() {
                   key={s}
                   href="#"
                   aria-label={s}
-                  className="text-muted hover:text-primary transition-colors text-xs border border-border hover:border-white/20 rounded-full px-3 py-1"
+                  className="text-muted hover:text-primary transition-colors text-xs border border-border hover:border-black/20 rounded-full px-3 py-1"
                 >
                   {s}
                 </a>
@@ -72,7 +72,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-8 border-t border-white/[0.06]">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-8 border-t border-black/[0.08]">
           <p className="text-muted text-xs">
             © {new Date().getFullYear()} Xensol Technologies. All rights reserved.
           </p>

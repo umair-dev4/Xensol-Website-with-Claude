@@ -4,16 +4,16 @@
 
 /* ── Design tokens ─────────────────────────────────── */
 :root {
-  --bg:           #0C0E1A;
-  --surface:      #141728;
-  --surface-2:    #1C1F3A;
-  --accent:       #6C63FF;
-  --accent-hover: #877EFF;
-  --mint:         #00C896;
-  --primary:      #E9EEFF;
-  --muted:        #8A93BC;
-  --border:       rgba(255,255,255,0.08);
-  --border-accent:rgba(108,99,255,0.22);
+  --bg:           #FFFFFF;
+  --surface:      #F7F8FC;
+  --surface-2:    #ECEEF6;
+  --accent:       #635BFF;
+  --accent-hover: #4F46E5;
+  --mint:         #00875A;
+  --primary:      #0A2540;
+  --muted:        #64748B;
+  --border:       rgba(0,0,0,0.08);
+  --border-accent:rgba(99,91,255,0.20);
 }
 
 /* ── Base ───────────────────────────────────────────── */
@@ -21,7 +21,7 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -35,29 +35,29 @@ body {
 
 /* ── Custom scrollbar ───────────────────────────────── */
 ::-webkit-scrollbar       { width: 3px; }
-::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-track { background: var(--surface); }
 ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent-hover); }
 
 /* ── Selection ─────────────────────────────────────── */
-::selection { background: rgba(108,99,255,0.22); color: var(--primary); }
+::selection { background: rgba(99,91,255,0.15); color: var(--primary); }
 
 /* ── Dot-grid background ────────────────────────────── */
 .dot-grid {
-  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.055) 1px, transparent 0);
   background-size: 32px 32px;
 }
 
 /* ── Gradient text ──────────────────────────────────── */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--mint) 100%);
+  background: linear-gradient(130deg, var(--primary) 0%, var(--accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-accent {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--mint) 100%);
+  background: linear-gradient(130deg, var(--accent) 0%, var(--mint) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,10 +65,10 @@ body {
 
 /* ── Card glow ──────────────────────────────────────── */
 .card-glow {
-  box-shadow: 0 0 0 1px var(--border), 0 20px 48px rgba(0,0,0,0.28);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.06);
 }
 .card-glow-accent {
-  box-shadow: 0 0 0 1px var(--border-accent), 0 20px 56px rgba(108,99,255,0.14);
+  box-shadow: 0 0 0 1px var(--border-accent), 0 8px 32px rgba(99,91,255,0.10);
 }
 
 /* ── Hero CSS entrance animations ───────────────────── */
@@ -89,7 +89,7 @@ body {
   padding: 4px 14px;
   border-radius: 99px;
   border: 1px solid var(--border-accent);
-  background: rgba(108,99,255,0.08);
+  background: rgba(99,91,255,0.07);
   color: var(--accent);
   font-family: var(--font-jetbrains), monospace;
   font-size: 0.72rem;
@@ -113,7 +113,7 @@ body {
 .btn-primary:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
-  box-shadow: 0 8px 28px rgba(108,99,255,0.28);
+  box-shadow: 0 8px 28px rgba(99,91,255,0.28);
 }
 
 .btn-ghost {
@@ -121,7 +121,7 @@ body {
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  border: 1px solid var(--border);
+  border: 1.5px solid rgba(0,0,0,0.14);
   color: var(--primary);
   border-radius: 999px;
   font-weight: 600;
@@ -129,22 +129,23 @@ body {
   transition: border-color 0.2s, background 0.2s, transform 0.15s;
 }
 .btn-ghost:hover {
-  border-color: rgba(108,99,255,0.32);
-  background: rgba(108,99,255,0.06);
+  border-color: rgba(99,91,255,0.40);
+  background: rgba(99,91,255,0.06);
   transform: translateY(-1px);
 }
 
 /* ── Feature card ───────────────────────────────────── */
 .feature-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.07);
   border-radius: 16px;
   padding: 28px;
-  transition: border-color 0.25s, background 0.25s, transform 0.25s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 .feature-card:hover {
-  border-color: rgba(108,99,255,0.2);
-  background: var(--surface-2);
+  border-color: rgba(99,91,255,0.28);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 0 0 3px rgba(99,91,255,0.08);
   transform: translateY(-2px);
 }
 

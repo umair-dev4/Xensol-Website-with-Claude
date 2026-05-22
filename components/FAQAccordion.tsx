@@ -16,7 +16,7 @@ export default function FAQAccordion({ items }: Props) {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <div className="divide-y divide-white/[0.06]">
+    <div className="divide-y divide-black/[0.08]">
       {items.map(({ q, a }, i) => (
         <div key={i}>
           <button
@@ -28,7 +28,7 @@ export default function FAQAccordion({ items }: Props) {
               {q}
             </span>
             <span
-              className={`flex-shrink-0 w-7 h-7 rounded-full border border-white/[0.12] flex items-center justify-center text-muted transition-all duration-300 ${
+              className={`flex-shrink-0 w-7 h-7 rounded-full border border-black/[0.12] flex items-center justify-center text-muted transition-all duration-300 ${
                 open === i ? 'bg-accent border-accent text-white rotate-45' : 'group-hover:border-accent/40'
               }`}
             >

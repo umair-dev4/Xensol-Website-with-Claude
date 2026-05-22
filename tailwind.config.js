@@ -7,21 +7,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#0C0E1A',
-        surface: '#141728',
-        'surface-2': '#1C1F3A',
+        bg: '#FFFFFF',
+        surface: '#F7F8FC',
+        'surface-2': '#ECEEF6',
         accent: {
-          DEFAULT: '#6C63FF',
-          hover: '#877EFF',
-          muted: 'rgba(108,99,255,0.12)',
+          DEFAULT: '#635BFF',
+          hover: '#4F46E5',
+          muted: 'rgba(99,91,255,0.10)',
         },
         mint: {
-          DEFAULT: '#00C896',
-          muted: 'rgba(0,200,150,0.12)',
+          DEFAULT: '#00875A',
+          muted: 'rgba(0,135,90,0.10)',
         },
-        primary: '#E9EEFF',
-        muted: '#8A93BC',
-        border: 'rgba(255,255,255,0.08)',
+        primary: '#0A2540',
+        muted: '#64748B',
+        border: 'rgba(0,0,0,0.08)',
       },
       fontFamily: {
         display: ['var(--font-syne)', 'sans-serif'],

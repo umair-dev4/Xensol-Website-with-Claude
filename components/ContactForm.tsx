@@ -49,7 +49,7 @@ export default function ContactForm() {
   };
 
   const inputCls =
-    'w-full bg-surface border border-white/[0.08] rounded-xl px-4 py-3 text-primary text-sm placeholder:text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-colors';
+    'w-full bg-surface border border-black/[0.10] rounded-xl px-4 py-3 text-primary text-sm placeholder:text-muted focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-colors';
 
   return (
     <AnimatePresence mode="wait">
@@ -58,7 +58,7 @@ export default function ContactForm() {
           key="success"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="flex flex-col items-center justify-center text-center py-16 px-8 bg-surface border border-white/[0.08] rounded-2xl"
+          className="flex flex-col items-center justify-center text-center py-16 px-8 bg-surface border border-black/[0.08] rounded-2xl"
         >
           <div className="w-16 h-16 rounded-full bg-mint/10 border border-mint/30 flex items-center justify-center mb-6">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
